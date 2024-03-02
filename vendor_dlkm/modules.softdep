@@ -2,8 +2,11 @@
 softdep soc_sleep_stats pre: smem
 softdep q6_notifier_dlkm pre: qcom_q6v5_pas
 softdep msm_video pre: subsys-pil-tz msm-mmrm
+softdep uff_fp_driver pre:mtk_disp_notify
 softdep msm_kgsl pre: arm_smmu nvmem_qfprom
 softdep qmi_helpers pre: qrtr
+softdep gf_qcom pre:oplus_fp_common
+softdep si_haptic pre: haptic aw8697
 softdep plh_scmi pre: plh_vendor
 softdep cpufreq_stats_scmi pre: cpufreq_stats_vendor
 softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-snps-eusb2 phy-msm-ssusb-qmp eud post: ucsi_glink
@@ -14,3 +17,4 @@ softdep ipam pre: subsys-pil-tz
 softdep ipam pre: qcom-arm-smmu-mod
 softdep leds_qti_tri_led pre: pwm-qti-lpg
 softdep pmu_scmi pre: pmu_vendor
+softdep haptic pre: aw8697

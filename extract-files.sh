@@ -14,7 +14,7 @@ SRC_ROOT="${MY_DIR}/../../.."
 TMP_DIR=$(mktemp -d)
 EXTRACT_KERNEL=true
 declare -a MODULE_FOLDERS=("vendor_ramdisk" "vendor_dlkm" "system_dlkm")
-DTB_PATTERN="Qualcomm_Technologies,_Inc._Ravelin_SoC"
+DTB_PATTERN="Qualcomm_Technologies,_Inc._Parrot_SoC"
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
